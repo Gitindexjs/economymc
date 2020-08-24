@@ -1,0 +1,41 @@
+name: EconomyController
+version: 1.5
+author: index.js
+main: com.liablecode.economy.main.Main
+description: This stores the whole economy db
+api-version: 1.13
+
+
+commands:
+  pay:
+    aliases: []
+    description: this is the command to pay players
+  confirmpay:
+    aliases: []
+    description: this is the confirm
+  balance:
+    aliases: [money]
+    description: gets the balance of the server
+  underminepay: 
+    aliases: [cancelpay]
+    description: cancels the pay cmd
+  togglescoreboard:
+    aliases: []
+  nodamagezone:
+    aliases: [setnodamagezone, ndz, setnodamagecircle, sndc, sndz]
+    description: cancels the damage to a player in a circle
+  plugins:
+    aliases: [pl]
+    description: this command ad
+  shop:
+    aliases: []
+    description: this command is for the shop
+  LaunchPadVector:
+    aliases: [lpv, launchpad, vectorlaunchpad, launch]
+    description: this command changes the values of the launchpad
+  ipgrab:
+    aliases: [ip]
+    description: this command gets the ip of a player
+  ping:
+    description: this command gets the ping of player or sender
+    

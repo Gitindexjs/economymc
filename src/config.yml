@@ -1,0 +1,30 @@
+# color codes are allowed like &LETTER
+scoreboardDisplayName: "&b&l&nLiable&c&l&nCode"
+website: "&ewww.liablecode.com"
+storepage: "store.liablecode.com"
+mobkillval: 100
+
+phrases:
+  # %player% is the name of the player
+  onemandeath:
+    - "&eSo %player% died."
+  # %killer% is the name of the killer and %player% is the name of the player
+  playerkilledplayer:
+    - "&b%player% &7got &6ALT+F4'd &7by &e%killer%"
+    - "&b%player% &7got rekt by &e%killer%"
+  suicide:
+    - "&b%player% &6shot &7themselves on the foot."
+nodamageX: 0
+nodamageY: 0
+nodamageZ: 0
+nodamageR: 50
+startWithScoreboard: false
+#launch pad
+LaunchPadBlock: "GOLD_BLOCK"
+LaunchPadPressurePlate: "STONE_PLATE"
+##vector launch pad
+LaunchPadX: 1
+LaunchPadY: 0
+LaunchPadZ: 0
+LaunchPadMult: 3
+LaunchPadYMov: 2
