@@ -6,7 +6,7 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="lib" path="C:/Users/Chris/Desktop/servers/nektax/spigot.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Chris/Downloads/LuckPerms-Bukkit-5.1.26.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Chris/Desktop/servers/1.8.8/spigot.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Chris/Desktop/servers/1.8.8/plugins/luckperms.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

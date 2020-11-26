@@ -31,8 +31,10 @@ public class IpGrab implements CommandExecutor {
 			sender.sendMessage(Utils.chat("&ePlease enter someone to get ip"));
 			return false;
 		}
-		Player player = (Player) sender;
-		player.playSound(player.getLocation(), Sound.NOTE_PLING, 2f, 100f);
+		if(sender instanceof Player) {
+			Player player = (Player) sender;
+			player.playSound(player.getLocation(), Sound.NOTE_PLING, 2f, 100f);	
+		}
 		Player target = Bukkit.getPlayer(args[0]);
 		if(target == null) {
 			sender.sendMessage(Utils.chat("&ePlease enter a valid user"));

@@ -32,6 +32,9 @@ public class ConfirmPay implements CommandExecutor {
 		plugin.data.getConfig().set("money." + target.getUniqueId().toString(), plugin.data.getConfig().getInt("money." + target.getUniqueId().toString()) + Integer.parseInt(args[1]));
 		player.sendMessage(Utils.chat("&eSuccessfully payed " + target.getDisplayName() + " &a$" + args[1]));
 		target.sendMessage(Utils.chat("&aRecieved $" + args[1] + " from " + player.getDisplayName()));
+		if(player.getWorld().getName() == plugin.getConfig().getString("kitpvpworld")) {
+			
+		}
 		player.setScoreboard(ScoreboardController.getBoard(player));
 		target.setScoreboard(ScoreboardController.getBoard(target));
 		return true;

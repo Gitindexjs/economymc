@@ -20,12 +20,10 @@ public class Balance implements CommandExecutor {
 		if (!(sender instanceof Player)) {
 			sender.sendMessage("Only players may execute this command");
 			return true;
-		}if(sender.hasPermission("balance.use")) {
-			sender.sendMessage("You do not have permission to use this command!");
-			return false;
 		}
 		Player player = (Player) sender;
-		
+		if(player.getWorld().getName() != plugin.getConfig().getString("kitpvpworld")) 
+			return false;
 		player.sendMessage("--------------------");
 		player.sendMessage(Utils.chat("&6Your current balance is: &a$" + plugin.data.getConfig().getInt("money." + player.getUniqueId().toString())));
 		player.sendMessage("--------------------");

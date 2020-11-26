@@ -44,7 +44,7 @@ public class Shop implements CommandExecutor {
 		Inventory inv = Bukkit.createInventory(player, 54, Utils.chat("&6Shop"));
 		// fly
 		Material[] materials = {Material.DIAMOND_HELMET, Material.DIAMOND_CHESTPLATE, Material.DIAMOND_LEGGINGS, Material.DIAMOND_BOOTS};
-		String[] names = { "Diamond Helmet", "Diamond Chestplate", "Diamond Leggins", "Diamond Boots"};
+		String[] names = { "Diamond Helmet", "Diamond Chestplate", "Diamond Leggins", "Diamond Boots" };
 		char[] positions = { 2, 11, 20, 29 };
 		Enchantment[][] ench = {{Enchantment.PROTECTION_ENVIRONMENTAL}, {Enchantment.PROTECTION_ENVIRONMENTAL}, {Enchantment.PROTECTION_ENVIRONMENTAL}, {Enchantment.PROTECTION_ENVIRONMENTAL}};
 		int[] costs = {4500, 5000, 3000, 2500};

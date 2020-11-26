@@ -22,12 +22,12 @@ public class ScoreboardController {
         o.setDisplayName(Utils.chat(plugin.getConfig().getString("scoreboardDisplayName")));
         o.setDisplaySlot(DisplaySlot.SIDEBAR);
         Score topCover = o.getScore(Utils.chat("&7&m--------------------&7"));
-        Score info = o.getScore(Utils.chat("&b&lInfo:"));
+        Score stats = o.getScore(Utils.chat("&d&lUser:"));
         Score username = o.getScore("__");
-        if(Utils.chat("    &6Username: &6" + player.getDisplayName()).length() < 40) {
-        	username = o.getScore(Utils.chat("    &6Username: &6" + player.getDisplayName()));
+        if(Utils.chat("    &6Username: &6" + player.getDisplayName()).length() < 16) {
+        	username = o.getScore(Utils.chat("    >&6Username: &6" + player.getDisplayName()));
         } else {
-        	username = o.getScore(Utils.chat("    &6Username: &6" + player.getName()));
+        	username = o.getScore(Utils.chat("    >&6Username: &6" + player.getName()));
         }
         
         Score balance = o.getScore(Utils.chat("    &fBalance: &a$" + getdatap().data.getConfig().getInt("money." + player.getUniqueId().toString())));
@@ -38,10 +38,10 @@ public class ScoreboardController {
         Score middleCover2 = o.getScore("    ");
         Score website = o.getScore(Utils.chat(plugin.getConfig().getString("website")));
         Score bottomCover = o.getScore(Utils.chat("&7&m-------------------"));
-        Score stats = o.getScore(Utils.chat("&d&lStats:"));
+        Score info = o.getScore(Utils.chat("&b&lInfo:"));
         Score kills = o.getScore(Utils.chat("    Kills: &a" + getdatap().data.getConfig().getInt("kills." + player.getUniqueId().toString())));
         Score deaths = o.getScore(Utils.chat("    Deaths: &c" + getdatap().data.getConfig().getInt("deaths." + player.getUniqueId().toString())));
-        Score kd = o.getScore(Utils.chat("    Kdr: &e" + (float) getdatap().data.getConfig().getDouble("kd." + player.getUniqueId().toString())));
+        Score kd = o.getScore(Utils.chat("    KD: &e" + (float) getdatap().data.getConfig().getDouble("kd." + player.getUniqueId().toString())));
         topCover.setScore(15);
         info.setScore(14);
         username.setScore(13);
